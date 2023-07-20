@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   _name: Human
-  _desription: Silly Human
+  _desription: human
   _cost: 2
-  _attack: 2
-  _picture: {fileID: 21300000, guid: b591f37e8468c4b4cb66f0988c41b9cc, type: 3}
+  _attack: 3
+  _picture: {fileID: 0}
   _ableInteractions: 01000000
