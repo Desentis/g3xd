@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4008f7f687d685e4bbf2608d7633fcab, type: 3}
+  m_Name: Team
+  m_EditorClassIdentifier: 
+  _id: 3
+  _name: Team
+  _desription: Kotiki 8A
+  _cost: 8
+  _attack: 1
+  _picture: {fileID: 21300000, guid: 1d06beeed7d5a1c44889e3a07cc545f9, type: 3}
+  _ableInteractions: 
