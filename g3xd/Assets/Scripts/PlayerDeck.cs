@@ -12,6 +12,7 @@ public class PlayerDeck : MonoBehaviour
     }
     public void Shuffle()
     {
+        Debug.Log("Test");
         foreach (CardSO card in CardDatabase.GetAllCards()) 
         {
             Debug.Log(card.Name);

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
     [SerializeField] private Interactions.Type _interaction;
-
+    [SerializeField] private Transform _cardPrefab;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -35,12 +35,33 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 
     private bool HasCard()
     {       
-        return transform.GetComponentInChildren<DragDrop>() != null;
+        return transform.GetComponentInChildren<Card>() != null;
     }
 
 
     private bool AbleToInteract(List<Interactions.Type> cardInteraction)
     {                
         return cardInteraction.IndexOf(_interaction) != -1;
+    }    
+
+    public void CardHandler()
+    {
+        if (HasCard())
+        {
+            Card currentCard = transform.GetComponentInChildren<Card>();
+            CardSO outputCardSO;
+            Debug.Log("TryGetRecipe");
+            if (RecipeDatabase.TryGetRecipe(_interaction, currentCard, out outputCardSO))
+            {
+                Debug.Log("Ouptut Card: " + outputCardSO.name);
+                Destroy(currentCard.gameObject);
+                Transform prefab = Instantiate(_cardPrefab, Vector3.zero, Quaternion.Euler(0, 0, 0), transform);
+            }
+
+        }
+        else 
+        {
+            Debug.Log("No card in slot " + _interaction.ToString());
+        }
     }
 }
