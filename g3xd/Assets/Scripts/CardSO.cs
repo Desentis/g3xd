@@ -22,8 +22,8 @@ public class CardSO : ScriptableObject
     [SerializeField] private int _attack;
     public int Attack { get => _attack; private set { _attack = value; }}
 
-    [SerializeField] private Sprite _picture;
-    public Sprite Picture { get => _picture; private set { _picture = value; } }
+    [SerializeField] private Sprite _image;
+    public Sprite Picture { get => _image; private set { _image = value; } }
 
     [SerializeField] private List<Interactions.Type> _ableInteractions;
     public List<Interactions.Type> AbleInteractions { get => _ableInteractions; private set { _ableInteractions = value; } }
