@@ -51,11 +51,13 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             Card currentCard = transform.GetComponentInChildren<Card>();
             CardSO outputCardSO;
             Debug.Log("TryGetRecipe");
-            if (RecipeDatabase.TryGetRecipe(_interaction, currentCard, out outputCardSO))
+            if (RecipeDatabase.TryGetRecipe(_interaction, currentCard, out outputCardSO))   
             {
                 Debug.Log("Ouptut Card: " + outputCardSO.name);
                 Destroy(currentCard.gameObject);
-                Transform prefab = Instantiate(_cardPrefab, Vector3.zero, Quaternion.Euler(0, 0, 0), transform);
+                Transform prefab = Instantiate(_cardPrefab, transform);
+                prefab.GetComponent<Card>().SetCardSO(outputCardSO);
+                prefab.GetComponent<RectTransform>().localPosition = Vector2.zero;
             }
 
         }
