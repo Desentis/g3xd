@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4008f7f687d685e4bbf2608d7633fcab, type: 3}
-  m_Name: Human
+  m_Name: Teacher
   m_EditorClassIdentifier: 
   _id: 0
-  _name: Human
-  _desription: Silly Human
-  _cost: 2
-  _attack: 2
-  _picture: {fileID: 21300000, guid: b591f37e8468c4b4cb66f0988c41b9cc, type: 3}
+  _name: "\u0418\u0432\u0430\u043D \u0418\u0432\u0430\u043D\u043E\u0432\u0438\u0447"
+  _desription: "\u041F\u0440\u0435\u043F\u043E\u0434\u0430\u0432\u0430\u0442\u0435\u043B\u044C"
+  _cost: 0
+  _attack: 0
+  _picture: {fileID: 0}
   _ableInteractions: 01000000

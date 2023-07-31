@@ -57,7 +57,8 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                 Destroy(currentCard.gameObject);
                 Transform prefab = Instantiate(_cardPrefab, transform);
                 prefab.GetComponent<Card>().SetCardSO(outputCardSO);
-                prefab.GetComponent<RectTransform>().localPosition = Vector2.zero;
+                prefab.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                prefab.GetComponent<RectTransform>().localScale = new Vector3(0.9f, 0.9f, 0.9f);
             }
 
         }

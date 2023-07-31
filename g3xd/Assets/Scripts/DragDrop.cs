@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -30,7 +31,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");        
-        _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor ;
+        _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)

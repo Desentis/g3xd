@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20b6618316926784ab880fab1562e8f3, type: 3}
-  m_Name: Sinus
+  m_Name: PassExamPermission
   m_EditorClassIdentifier: 
-  _inputCardSO: {fileID: 11400000, guid: fe0fa85656185494e981138980ccf994, type: 2}
-  _outputCardSO: {fileID: 11400000, guid: 8343059b8c3456547a12e3a9c7e1bf7a, type: 2}
-  _ableInteractions: 01000000
+  _inputCardSO: {fileID: 11400000, guid: 811d843f1846d6047a5740974f5016c6, type: 2}
+  _outputCardSO: {fileID: 11400000, guid: 5da91749a05dafd4b900f8974cc23fef, type: 2}
+  _ableInteractions: 04000000

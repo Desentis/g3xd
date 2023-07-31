@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4008f7f687d685e4bbf2608d7633fcab, type: 3}
-  m_Name: Team
+  m_Name: University
   m_EditorClassIdentifier: 
-  _id: 3
-  _name: Team
-  _desription: Kotiki 8A
-  _cost: 8
-  _attack: 1
-  _picture: {fileID: 21300000, guid: 1d06beeed7d5a1c44889e3a07cc545f9, type: 3}
-  _ableInteractions: 
+  _id: 0
+  _name: "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+  _desription: 
+  _cost: 0
+  _attack: 0
+  _picture: {fileID: 0}
+  _ableInteractions: 00000000

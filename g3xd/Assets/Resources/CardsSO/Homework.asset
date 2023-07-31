@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4008f7f687d685e4bbf2608d7633fcab, type: 3}
-  m_Name: Mirage
+  m_Name: Homework
   m_EditorClassIdentifier: 
-  _id: 1
-  _name: Mirage
-  _desription: Shitty Map
-  _cost: 16
+  _id: 0
+  _name: "\u0414\u043E\u043C\u0430\u0448\u043D\u0435\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435"
+  _desription: "\u0422\u043E\u043B\u044C\u043A\u043E \u0442\u044B \u0441\u043F\u043E\u043E\u0431\u0435\u043D
+    \u0435\u0433\u043E \u0441\u0434\u0435\u043B\u0430\u0442\u044C"
+  _cost: 0
   _attack: 0
-  _picture: {fileID: 21300000, guid: 211c7071125fe654b88562c0604b889b, type: 3}
-  _ableInteractions: 00000000
+  _picture: {fileID: 0}
+  _ableInteractions: 03000000
