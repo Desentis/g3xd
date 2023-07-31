@@ -1,13 +1,11 @@
-using JetBrains.Annotations;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public static class CardDatabase
 {
-    const string PATH_SO_CARDS = "SOCards";
-    private static List<CardSO> cardList = Resources.LoadAll<CardSO>(PATH_SO_CARDS).ToList();
+    private const string PATH_CARDS_SO = "CardsSO";
+    private static List<CardSO> cardList = Resources.LoadAll<CardSO>(PATH_CARDS_SO).ToList();
     
     public static List<CardSO> GetAllCards()
     {

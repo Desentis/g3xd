@@ -5,6 +5,10 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     [SerializeField] private CardSO _cardSO;
+    public CardSO CardSO => _cardSO;
 
-    public CardSO CardSO { get { return _cardSO; } private set { _cardSO = value; } }
+    public void SetCardSO(CardSO cardSO)
+    {
+        _cardSO = cardSO;
+    }
 }
